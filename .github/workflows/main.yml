@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - name: Install Python2
-        run: sudo apt instal python2
+        run: sudo apt install python2
         
       - name: Clone kernel source
         run:
