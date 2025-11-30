@@ -20,6 +20,7 @@ jobs:
       - name: Install build dependencies
         run: |
           DEBIAN_FRONTEND=noninteractive sudo apt-get update
+          DEBIAN_FRONTEND=noninteractive sudo apt-get upgrade
           DEBIAN_FRONTEND=noninteractive sudo apt-get install -y python2
            
       - name: Clone kernel source
