@@ -19,6 +19,8 @@ jobs:
     steps:
       - name: IDK
         run: |
+          sudo apt update
+          sudo apt install -y python3
           alias python2=python3
         
            
