@@ -21,8 +21,6 @@ jobs:
         run: |
           sudo apt update
           sudo apt install -y python3
-          alias python2=python3
-        
            
       - name: Clone kernel source
         run:
@@ -41,6 +39,7 @@ jobs:
         working-directory: kernel
         run: |
           set -euo pipefail
+          alias python2=python3
           export PATH=/usr/lib/llvm-18/bin:$PATH
           export ARCH=arm64
           export CC=clang-18
