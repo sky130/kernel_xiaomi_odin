@@ -17,6 +17,9 @@ jobs:
     timeout-minutes: 30
 
     steps:
+      - name: Install Python2
+        run: apt instal python2
+        
       - name: Clone kernel source
         run:
           git clone --depth=1 https://github.com/sky130/kernel_xiaomi_odin.git kernel
